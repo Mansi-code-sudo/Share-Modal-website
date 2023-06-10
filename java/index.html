@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Share | CodeHelp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Circles-->
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <!--main card-->
+    <div class="card">
+        <img src="mansi photo.jpeg" width="150px" height="150px">
+        <h1>Mansi Vidyarthi</h1>
+        <h3>Student at VIT</h3>
+
+        <div class="btn-grp">
+            <button onclick="openMode()" class="share" ><i class="fa-solid fa-share"></i>Share My Profile</button>
+            <button class="follow">Follow Me</button>
+        </div>
+    </div>
+
+    <!--Main modal-->
+    <div class="modal">
+        <div class="up-head">
+            <h1>Share My Profile</h1>
+            <button class="close"><i class="fa-solid fa-xmark close"></i></button>
+        </div>
+        <div class="sub"><h4>Share this via</h4></div>
+        <div class="icon-container">
+            <a href="#" class="icon" id="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="icon" id="twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="icon" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="icon" id="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="#" class="icon" id="telegram">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+        </div>
+    </div>
+
+    <!--Overlay-->
+    <div onclick="closemode()" class="overlay"></div>
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
